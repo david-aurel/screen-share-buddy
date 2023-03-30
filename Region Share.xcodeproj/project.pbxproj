@@ -45,6 +45,7 @@
 		639C64DB29D6119400CDF3B0 /* Region ShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Region ShareUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		639C64DF29D6119400CDF3B0 /* Region_ShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region_ShareUITests.swift; sourceTree = "<group>"; };
 		639C64E129D6119400CDF3B0 /* Region_ShareUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region_ShareUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		639C64EE29D628BA00CDF3B0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 		639C64B729D6119300CDF3B0 = {
 			isa = PBXGroup;
 			children = (
+				639C64EE29D628BA00CDF3B0 /* .gitignore */,
 				639C64C229D6119300CDF3B0 /* Region Share */,
 				639C64D429D6119400CDF3B0 /* Region ShareTests */,
 				639C64DE29D6119400CDF3B0 /* Region ShareUITests */,
