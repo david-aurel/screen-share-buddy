@@ -1,5 +1,5 @@
 //
-//  Region_ShareApp.swift
+//  RegionShareApp.swift
 //  Region Share
 //
 //  Created by David on 30.03.23.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Region_ShareApp: App {
+struct RegionShareApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
