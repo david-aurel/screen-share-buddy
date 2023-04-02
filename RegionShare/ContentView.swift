@@ -5,28 +5,59 @@
 //  Created by David on 30.03.23.
 //
 
+import Combine
+import OSLog
+import ScreenCaptureKit
 import SwiftUI
 
 struct ContentView: View {
-    @State var isUnauthorized = true
+    @State var isUnauthorized = false
 
-    // @StateObject let screenRecorder = ScreenRecorder()
+    @StateObject var screenRecorder = ScreenRecorder()
 
     var body: some View {
-        if isUnauthorized {
-            VStack(spacing: 0) {
-                Text("⛔️🙈")
-                    .font(.largeTitle)
-                    .padding(.top)
-                Text("No screen recording permission")
-                    .font(.largeTitle)
-                    .multilineTextAlignment(.center)
-                Text("Open System Settings and go to Privacy & Security > Screen Recording to grant permission.")
-                    .font(.title2)
-                    .multilineTextAlignment(.center)
-                    .padding(.top, 8)
+        VStack {
+            if isUnauthorized {
+                VStack(spacing: 0) {
+                    Text("⛔️🙈")
+                        .font(.largeTitle)
+                        .padding(.top)
+                    Text("No screen recording permission")
+                        .font(.largeTitle)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 16.0)
+                    Text("Region Share works by recording your entire screen, then turning the desired area into a new window that you can share. To grant permission open System Settings and go to Privacy & Security > Screen Recording and activate Region Share.")
+                        .font(.title2)
+                        .multilineTextAlignment(.center)
+                        .padding(16.0)
+                }
+                .frame(maxWidth: 800)
+            } else {
+                screenRecorder.capturePreview
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .aspectRatio(screenRecorder.contentSize, contentMode: .fit)
+                if screenRecorder.isRunning {
+                    Text("isRunning 🔴")
+                }
+                Button("Start", action: {
+                    Task {
+                        if await screenRecorder.canRecord {
+                            await screenRecorder.start()
+                        } else {
+                            isUnauthorized = true
+                        }
+                    }
+                })
+                Button("Stop", action: {
+                    Task {
+                        if await screenRecorder.canRecord {
+                            await screenRecorder.stop()
+                        } else {
+                            isUnauthorized = true
+                        }
+                    }
+                })
             }
-            .frame(maxWidth: 800)
         }
     }
 }
