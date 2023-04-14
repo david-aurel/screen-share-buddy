@@ -101,7 +101,7 @@ private class CaptureEngineStreamOutput: NSObject, SCStreamOutput, SCStreamDeleg
     private func createFrame(for sampleBuffer: CMSampleBuffer) -> CapturedFrame? {
         // Retrieve the array of metadata attachments from the sample buffer.
         guard let attachmentsArray = CMSampleBufferGetSampleAttachmentsArray(sampleBuffer, createIfNecessary: false) as? [[SCStreamFrameInfo: Any]],
-              var attachments = attachmentsArray.first else { return nil }
+              let attachments = attachmentsArray.first else { return nil }
         
         // Validate the status of the frame. If it isn't .complete, return nil.
         guard let statusRawValue = attachments[SCStreamFrameInfo.status] as? Int,

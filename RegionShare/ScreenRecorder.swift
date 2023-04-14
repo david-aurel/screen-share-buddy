@@ -129,9 +129,10 @@ class ScreenRecorder: ObservableObject {
         streamConfig.capturesAudio = false
         
         // Configure the display content width and height.
-        if let display = currentDisplay {
-            streamConfig.width = display.width * scaleFactor
-            streamConfig.height = display.height * scaleFactor
+        if let unwrappedFrame = NSApplication.shared.mainWindow?.frame {
+            streamConfig.sourceRect = unwrappedFrame
+            streamConfig.width = Int(unwrappedFrame.width)
+            streamConfig.height = Int(unwrappedFrame.height)
         }
         
         // Set the capture interval at 30 fps.

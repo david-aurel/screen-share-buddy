@@ -34,29 +34,16 @@ struct ContentView: View {
                 .frame(maxWidth: 800)
             } else {
                 screenRecorder.capturePreview
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .aspectRatio(screenRecorder.contentSize, contentMode: .fit)
-                if screenRecorder.isRunning {
-                    Text("isRunning 🔴")
+                    .frame(maxWidth: .infinity, maxHeight: .infinity).ignoresSafeArea()
+            }
+        }
+        .onAppear {
+            Task {
+                if await screenRecorder.canRecord {
+                    await screenRecorder.start()
+                } else {
+                    isUnauthorized = true
                 }
-                Button("Start", action: {
-                    Task {
-                        if await screenRecorder.canRecord {
-                            await screenRecorder.start()
-                        } else {
-                            isUnauthorized = true
-                        }
-                    }
-                })
-                Button("Stop", action: {
-                    Task {
-                        if await screenRecorder.canRecord {
-                            await screenRecorder.stop()
-                        } else {
-                            isUnauthorized = true
-                        }
-                    }
-                })
             }
         }
     }
