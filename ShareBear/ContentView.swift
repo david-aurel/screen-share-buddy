@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  RegionShare
+//  ShareBear
 //
-//  Created by David on 30.03.23.
+//  Created by David on 30.04.23.
 //
 
 import Combine
@@ -26,7 +26,7 @@ struct ContentView: View {
                         .font(.largeTitle)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 16.0)
-                    Text("Region Share works by recording your screen, then displaying it in a new window that can be shared to other applications. To grant permission, open System Settings and go to Privacy & Security > Screen Recording. Then tick the checkbox for Region Share.")
+                    Text("Share Bear works by recording your screen, then displaying it in a new window that can be shared to other applications. To grant permission, open System Settings and go to Privacy & Security > Screen Recording. Then tick the checkbox for Share Bear.")
                         .font(.title2)
                         .multilineTextAlignment(.center)
                         .padding(16.0)

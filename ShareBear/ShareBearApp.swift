@@ -1,8 +1,8 @@
 //
-//  RegionShareApp.swift
-//  Region Share
+//  ShareBearApp.swift
+//  ShareBear
 //
-//  Created by David on 30.03.23.
+//  Created by David on 30.04.23.
 //
 
 import SwiftUI

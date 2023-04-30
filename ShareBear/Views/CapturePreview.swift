@@ -1,8 +1,8 @@
 //
 //  CapturePreview.swift
-//  RegionShare
+//  ShareBear
 //
-//  Created by David on 31.03.23.
+//  Created by David on 30.04.23.
 //
 //  Description:
 //  A view that renders a video frame.

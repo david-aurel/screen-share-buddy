@@ -1,6 +1,6 @@
 //
 //  CaptureEngine.swift
-//  RegionShare
+//  ShareBear
 //
 //  Created by David on 31.03.23.
 //

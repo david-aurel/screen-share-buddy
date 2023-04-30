@@ -7,30 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		639C64C429D6119300CDF3B0 /* RegionShareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C64C329D6119300CDF3B0 /* RegionShareApp.swift */; };
-		639C64C629D6119300CDF3B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C64C529D6119300CDF3B0 /* ContentView.swift */; };
-		639C64C829D6119400CDF3B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639C64C729D6119400CDF3B0 /* Assets.xcassets */; };
-		639C64CB29D6119400CDF3B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639C64CA29D6119400CDF3B0 /* Preview Assets.xcassets */; };
-		63D89C9F29D6C6BE006D7536 /* ScreenRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D89C9E29D6C6BE006D7536 /* ScreenRecorder.swift */; };
-		63D89CA329D6C73A006D7536 /* CapturePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D89CA229D6C73A006D7536 /* CapturePreview.swift */; };
-		63D89CA529D6D0E1006D7536 /* CaptureEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D89CA429D6D0E1006D7536 /* CaptureEngine.swift */; };
+		636B785929FEA7200068B1CE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 636B785829FEA7200068B1CE /* .gitignore */; };
+		63BB8B2C29FE9EA70034B264 /* ShareBearApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB8B2B29FE9EA70034B264 /* ShareBearApp.swift */; };
+		63BB8B2E29FE9EA70034B264 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB8B2D29FE9EA70034B264 /* ContentView.swift */; };
+		63BB8B3029FE9EA80034B264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63BB8B2F29FE9EA80034B264 /* Assets.xcassets */; };
+		63BB8B3329FE9EA80034B264 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63BB8B3229FE9EA80034B264 /* Preview Assets.xcassets */; };
+		63BB8B3D29FEA08C0034B264 /* ScreenRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB8B3C29FEA08C0034B264 /* ScreenRecorder.swift */; };
+		63BB8B3F29FEA0A00034B264 /* CaptureEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB8B3E29FEA0A00034B264 /* CaptureEngine.swift */; };
+		63BB8B4229FEA0D50034B264 /* CapturePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB8B4129FEA0D50034B264 /* CapturePreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		639C64C029D6119300CDF3B0 /* RegionShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegionShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		639C64C329D6119300CDF3B0 /* RegionShareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionShareApp.swift; sourceTree = "<group>"; };
-		639C64C529D6119300CDF3B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		639C64C729D6119400CDF3B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		639C64CA29D6119400CDF3B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		639C64CC29D6119400CDF3B0 /* RegionShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RegionShare.entitlements; sourceTree = "<group>"; };
-		639C64EE29D628BA00CDF3B0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		63D89C9E29D6C6BE006D7536 /* ScreenRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRecorder.swift; sourceTree = "<group>"; };
-		63D89CA229D6C73A006D7536 /* CapturePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePreview.swift; sourceTree = "<group>"; };
-		63D89CA429D6D0E1006D7536 /* CaptureEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureEngine.swift; sourceTree = "<group>"; };
+		636B785829FEA7200068B1CE /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		63BB8B2829FE9EA70034B264 /* Share Bear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Share Bear.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63BB8B2B29FE9EA70034B264 /* ShareBearApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareBearApp.swift; sourceTree = "<group>"; };
+		63BB8B2D29FE9EA70034B264 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63BB8B2F29FE9EA80034B264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63BB8B3229FE9EA80034B264 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		63BB8B3429FE9EA80034B264 /* ShareBear.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareBear.entitlements; sourceTree = "<group>"; };
+		63BB8B3C29FEA08C0034B264 /* ScreenRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRecorder.swift; sourceTree = "<group>"; };
+		63BB8B3E29FEA0A00034B264 /* CaptureEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureEngine.swift; sourceTree = "<group>"; };
+		63BB8B4129FEA0D50034B264 /* CapturePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		639C64BD29D6119300CDF3B0 /* Frameworks */ = {
+		63BB8B2529FE9EA70034B264 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,50 +41,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		639C64B729D6119300CDF3B0 = {
+		63BB8B1F29FE9EA70034B264 = {
 			isa = PBXGroup;
 			children = (
-				639C64EE29D628BA00CDF3B0 /* .gitignore */,
-				639C64C229D6119300CDF3B0 /* RegionShare */,
-				639C64C129D6119300CDF3B0 /* Products */,
+				636B785829FEA7200068B1CE /* .gitignore */,
+				63BB8B2A29FE9EA70034B264 /* ShareBear */,
+				63BB8B2929FE9EA70034B264 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		639C64C129D6119300CDF3B0 /* Products */ = {
+		63BB8B2929FE9EA70034B264 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				639C64C029D6119300CDF3B0 /* RegionShare.app */,
+				63BB8B2829FE9EA70034B264 /* Share Bear.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		639C64C229D6119300CDF3B0 /* RegionShare */ = {
+		63BB8B2A29FE9EA70034B264 /* ShareBear */ = {
 			isa = PBXGroup;
 			children = (
-				639C64C329D6119300CDF3B0 /* RegionShareApp.swift */,
-				639C64C529D6119300CDF3B0 /* ContentView.swift */,
-				63D89C9E29D6C6BE006D7536 /* ScreenRecorder.swift */,
-				63D89CA429D6D0E1006D7536 /* CaptureEngine.swift */,
-				63D89CA129D6C710006D7536 /* Views */,
-				639C64C729D6119400CDF3B0 /* Assets.xcassets */,
-				639C64CC29D6119400CDF3B0 /* RegionShare.entitlements */,
-				639C64C929D6119400CDF3B0 /* Preview Content */,
+				63BB8B2B29FE9EA70034B264 /* ShareBearApp.swift */,
+				63BB8B2D29FE9EA70034B264 /* ContentView.swift */,
+				63BB8B3C29FEA08C0034B264 /* ScreenRecorder.swift */,
+				63BB8B3E29FEA0A00034B264 /* CaptureEngine.swift */,
+				63BB8B4029FEA0C20034B264 /* Views */,
+				63BB8B2F29FE9EA80034B264 /* Assets.xcassets */,
+				63BB8B3429FE9EA80034B264 /* ShareBear.entitlements */,
+				63BB8B3129FE9EA80034B264 /* Preview Content */,
 			);
-			path = RegionShare;
+			path = ShareBear;
 			sourceTree = "<group>";
 		};
-		639C64C929D6119400CDF3B0 /* Preview Content */ = {
+		63BB8B3129FE9EA80034B264 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				639C64CA29D6119400CDF3B0 /* Preview Assets.xcassets */,
+				63BB8B3229FE9EA80034B264 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		63D89CA129D6C710006D7536 /* Views */ = {
+		63BB8B4029FEA0C20034B264 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				63D89CA229D6C73A006D7536 /* CapturePreview.swift */,
+				63BB8B4129FEA0D50034B264 /* CapturePreview.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -91,39 +92,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		639C64BF29D6119300CDF3B0 /* RegionShare */ = {
+		63BB8B2729FE9EA70034B264 /* Share Bear */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 639C64E529D6119400CDF3B0 /* Build configuration list for PBXNativeTarget "RegionShare" */;
+			buildConfigurationList = 63BB8B3729FE9EA80034B264 /* Build configuration list for PBXNativeTarget "Share Bear" */;
 			buildPhases = (
-				639C64BC29D6119300CDF3B0 /* Sources */,
-				639C64BD29D6119300CDF3B0 /* Frameworks */,
-				639C64BE29D6119300CDF3B0 /* Resources */,
+				63BB8B2429FE9EA70034B264 /* Sources */,
+				63BB8B2529FE9EA70034B264 /* Frameworks */,
+				63BB8B2629FE9EA70034B264 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RegionShare;
-			productName = "Region Share";
-			productReference = 639C64C029D6119300CDF3B0 /* RegionShare.app */;
+			name = "Share Bear";
+			productName = ShareBear;
+			productReference = 63BB8B2829FE9EA70034B264 /* Share Bear.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		639C64B829D6119300CDF3B0 /* Project object */ = {
+		63BB8B2029FE9EA70034B264 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					639C64BF29D6119300CDF3B0 = {
-						CreatedOnToolsVersion = 14.2;
+					63BB8B2729FE9EA70034B264 = {
+						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
-			buildConfigurationList = 639C64BB29D6119300CDF3B0 /* Build configuration list for PBXProject "RegionShare" */;
+			buildConfigurationList = 63BB8B2329FE9EA70034B264 /* Build configuration list for PBXProject "ShareBear" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -131,45 +132,46 @@
 				en,
 				Base,
 			);
-			mainGroup = 639C64B729D6119300CDF3B0;
-			productRefGroup = 639C64C129D6119300CDF3B0 /* Products */;
+			mainGroup = 63BB8B1F29FE9EA70034B264;
+			productRefGroup = 63BB8B2929FE9EA70034B264 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				639C64BF29D6119300CDF3B0 /* RegionShare */,
+				63BB8B2729FE9EA70034B264 /* Share Bear */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		639C64BE29D6119300CDF3B0 /* Resources */ = {
+		63BB8B2629FE9EA70034B264 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				639C64CB29D6119400CDF3B0 /* Preview Assets.xcassets in Resources */,
-				639C64C829D6119400CDF3B0 /* Assets.xcassets in Resources */,
+				63BB8B3329FE9EA80034B264 /* Preview Assets.xcassets in Resources */,
+				636B785929FEA7200068B1CE /* .gitignore in Resources */,
+				63BB8B3029FE9EA80034B264 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		639C64BC29D6119300CDF3B0 /* Sources */ = {
+		63BB8B2429FE9EA70034B264 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				639C64C629D6119300CDF3B0 /* ContentView.swift in Sources */,
-				63D89CA329D6C73A006D7536 /* CapturePreview.swift in Sources */,
-				63D89CA529D6D0E1006D7536 /* CaptureEngine.swift in Sources */,
-				639C64C429D6119300CDF3B0 /* RegionShareApp.swift in Sources */,
-				63D89C9F29D6C6BE006D7536 /* ScreenRecorder.swift in Sources */,
+				63BB8B3F29FEA0A00034B264 /* CaptureEngine.swift in Sources */,
+				63BB8B2E29FE9EA70034B264 /* ContentView.swift in Sources */,
+				63BB8B2C29FE9EA70034B264 /* ShareBearApp.swift in Sources */,
+				63BB8B4229FEA0D50034B264 /* CapturePreview.swift in Sources */,
+				63BB8B3D29FEA08C0034B264 /* ScreenRecorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		639C64E329D6119400CDF3B0 /* Debug */ = {
+		63BB8B3529FE9EA80034B264 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -219,7 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -229,7 +231,7 @@
 			};
 			name = Debug;
 		};
-		639C64E429D6119400CDF3B0 /* Release */ = {
+		63BB8B3629FE9EA80034B264 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -273,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -282,18 +284,18 @@
 			};
 			name = Release;
 		};
-		639C64E629D6119400CDF3B0 /* Debug */ = {
+		63BB8B3829FE9EA80034B264 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = RegionShare/RegionShare.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_ENTITLEMENTS = ShareBear/ShareBear.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RegionShare/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ShareBear/Preview Content\"";
 				DEVELOPMENT_TEAM = THW398H74P;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -302,25 +304,25 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "david-aurel.RegionShare";
+				PRODUCT_BUNDLE_IDENTIFIER = "david-aurel.ShareBear";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		639C64E729D6119400CDF3B0 /* Release */ = {
+		63BB8B3929FE9EA80034B264 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = RegionShare/RegionShare.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_ENTITLEMENTS = ShareBear/ShareBear.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RegionShare/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ShareBear/Preview Content\"";
 				DEVELOPMENT_TEAM = THW398H74P;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -329,7 +331,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "david-aurel.RegionShare";
+				PRODUCT_BUNDLE_IDENTIFIER = "david-aurel.ShareBear";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -339,25 +341,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		639C64BB29D6119300CDF3B0 /* Build configuration list for PBXProject "RegionShare" */ = {
+		63BB8B2329FE9EA70034B264 /* Build configuration list for PBXProject "ShareBear" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				639C64E329D6119400CDF3B0 /* Debug */,
-				639C64E429D6119400CDF3B0 /* Release */,
+				63BB8B3529FE9EA80034B264 /* Debug */,
+				63BB8B3629FE9EA80034B264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		639C64E529D6119400CDF3B0 /* Build configuration list for PBXNativeTarget "RegionShare" */ = {
+		63BB8B3729FE9EA80034B264 /* Build configuration list for PBXNativeTarget "Share Bear" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				639C64E629D6119400CDF3B0 /* Debug */,
-				639C64E729D6119400CDF3B0 /* Release */,
+				63BB8B3829FE9EA80034B264 /* Debug */,
+				63BB8B3929FE9EA80034B264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 639C64B829D6119300CDF3B0 /* Project object */;
+	rootObject = 63BB8B2029FE9EA70034B264 /* Project object */;
 }
