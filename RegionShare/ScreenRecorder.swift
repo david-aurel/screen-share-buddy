@@ -25,8 +25,9 @@ class ScreenRecorder: ObservableObject {
     @Published var contentSize = CGSize(width: 1, height: 1)
     private var scaleFactor: Int { Int(NSScreen.main?.backingScaleFactor ?? 2) }
     
-    @Published var currentDisplay: SCDisplay? { didSet { updateEngine() } }
+    @Published var currentDisplay: SCDisplay?
     private var availableApps = [SCRunningApplication]()
+    private var windowFrame: NSRect?
     
     // The object that manages the SCStream.
     private let captureEngine = CaptureEngine()
@@ -75,21 +76,11 @@ class ScreenRecorder: ObservableObject {
     
     /// Stops capturing screen content.
     func stop() async {
+        // Exit early if already running.
         guard isRunning else { return }
+        
         await captureEngine.stopCapture()
-        let stopFrame = CapturedFrame(surface: nil, contentRect: .zero, contentScale: 0, scaleFactor: 0)
-        capturePreview.updateFrame(stopFrame)
         isRunning = false
-    }
-    
-    /// - Tag: UpdateCaptureConfig
-    private func updateEngine() {
-        guard isRunning else { return }
-        guard let filter = contentFilter else { return }
-            
-        Task {
-            await captureEngine.update(configuration: streamConfiguration, filter: filter)
-        }
     }
     
     /// - Tag: GetAvailableContent
@@ -99,8 +90,19 @@ class ScreenRecorder: ObservableObject {
             let availableContent = try await SCShareableContent.excludingDesktopWindows(false, onScreenWindowsOnly: true)
             currentDisplay = availableContent.displays.first
             availableApps = availableContent.applications
+            if let availableWindowFrame = NSApplication.shared.mainWindow?.frame {
+                windowFrame = availableWindowFrame
+            }
         } catch {
             logger.error("Failed to get the shareable content: \(error.localizedDescription)")
+        }
+    }
+    
+    func update() {
+        Task {
+            await refreshAvailableContent()
+            guard let filter = contentFilter else { return }
+            await captureEngine.update(configuration: streamConfiguration, filter: filter)
         }
     }
     
@@ -129,10 +131,14 @@ class ScreenRecorder: ObservableObject {
         streamConfig.capturesAudio = false
         
         // Configure the display content width and height.
-        if let unwrappedFrame = NSApplication.shared.mainWindow?.frame {
-            streamConfig.sourceRect = unwrappedFrame
-            streamConfig.width = Int(unwrappedFrame.width)
-            streamConfig.height = Int(unwrappedFrame.height)
+        if let _frame = windowFrame {
+            if let _display = currentDisplay {
+                // Convert `windowFrame` coordinates (origin is bottom left) to `streamConfig` coordinates (origin is top left)
+                let convertedWindowFrameY = CGFloat(_display.height) - _frame.maxY
+                streamConfig.sourceRect = CGRect(x: _frame.origin.x, y: convertedWindowFrameY, width: _frame.width, height: _frame.height)
+                streamConfig.width = Int(_frame.width)
+                streamConfig.height = Int(_frame.height)
+            }
         }
         
         // Set the capture interval at 30 fps.
@@ -143,11 +149,5 @@ class ScreenRecorder: ObservableObject {
         streamConfig.queueDepth = 5
         
         return streamConfig
-    }
-}
-
-extension SCDisplay {
-    var displayName: String {
-        "Display: \(width) x \(height)"
     }
 }

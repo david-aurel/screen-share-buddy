@@ -26,7 +26,7 @@ struct ContentView: View {
                         .font(.largeTitle)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 16.0)
-                    Text("Region Share works by recording your entire screen, then turning the desired area into a new window that you can share. To grant permission open System Settings and go to Privacy & Security > Screen Recording and activate Region Share.")
+                    Text("Region Share works by recording your screen, then displaying it in a new window that can be shared to other applications. To grant permission, open System Settings and go to Privacy & Security > Screen Recording. Then tick the checkbox for Region Share.")
                         .font(.title2)
                         .multilineTextAlignment(.center)
                         .padding(16.0)
@@ -45,6 +45,13 @@ struct ContentView: View {
                     isUnauthorized = true
                 }
             }
+        }
+        // Update portion of screen to capture whenever the window is moved or resized
+        .onReceive(NotificationCenter.default.publisher(for: NSWindow.didMoveNotification)) { _ in
+            screenRecorder.update()
+        }
+        .onReceive(NotificationCenter.default.publisher(for: NSWindow.didResizeNotification)) { _ in
+            screenRecorder.update()
         }
     }
 }
