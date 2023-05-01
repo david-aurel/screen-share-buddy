@@ -1,8 +1,8 @@
 //
-//  ShareBearApp.swift
-//  ShareBear
+//  ScreenShareBuddyApp.swift
+//  ScreenShareBuddy
 //
-//  Created by David on 30.04.23.
+//  Created by David on 01.05.23.
 //
 
 import SwiftUI

@@ -1,8 +1,11 @@
 //
 //  CaptureEngine.swift
-//  ShareBear
+//  ScreenShareBuddy
 //
-//  Created by David on 31.03.23.
+//  Created by David on 01.05.23.
+//
+//  Description:
+//  A model object that provides the interface to manage a Screen Capture Stream
 //
 
 import Combine

@@ -1,8 +1,8 @@
 //
 //  CapturePreview.swift
-//  ShareBear
+//  ScreenShareBuddy
 //
-//  Created by David on 30.04.23.
+//  Created by David on 01.05.23.
 //
 //  Description:
 //  A view that renders a video frame.

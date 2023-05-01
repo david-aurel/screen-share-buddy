@@ -1,8 +1,8 @@
 //
 //  ScreenRecorder.swift
-//  ShareBear
+//  ScreenShareBuddy
 //
-//  Created by David on 30.04.23.
+//  Created by David on 01.05.23.
 //
 //  Description:
 //  A model object that provides the interface to capture screen content.

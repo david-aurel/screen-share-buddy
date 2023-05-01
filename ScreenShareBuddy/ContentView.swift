@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  ShareBear
+//  ScreenShareBuddy
 //
-//  Created by David on 30.04.23.
+//  Created by David on 01.05.23.
 //
 
 import Combine
@@ -26,7 +26,7 @@ struct ContentView: View {
                         .font(.largeTitle)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 16.0)
-                    Text("Share Bear works by recording your screen, then displaying it in a new window that can be shared to other applications. To grant permission, open System Settings and go to Privacy & Security > Screen Recording. Then tick the checkbox for Share Bear.")
+                    Text("Screen Share Buddy works by recording your screen, then displaying it in a new window that can be shared to other applications. To grant permission, open System Settings and go to Privacy & Security > Screen Recording. Then tick the checkbox for Screen Share Buddy.")
                         .font(.title2)
                         .multilineTextAlignment(.center)
                         .padding(16.0)
