@@ -34,18 +34,20 @@ class CaptureEngine: NSObject, @unchecked Sendable {
     // Store the startCapture continuation, so that it can be canceled when an error occurs.
     private var continuation: AsyncThrowingStream<CapturedFrame, Error>.Continuation?
     
+    private var streamOutput: CaptureEngineStreamOutput?
     /// - Tag: StartCapture
     func startCapture(configuration: SCStreamConfiguration, filter: SCContentFilter) -> AsyncThrowingStream<CapturedFrame, Error> {
         AsyncThrowingStream<CapturedFrame, Error> { continuation in
             // The stream output object
-            let streamOutput = CaptureEngineStreamOutput(continuation: continuation)
-            streamOutput.capturedFrameHandler = { continuation.yield($0) }
+            let output = CaptureEngineStreamOutput(continuation: continuation)
+            streamOutput = output
+            streamOutput!.capturedFrameHandler = { continuation.yield($0) }
                 
             do {
                 stream = SCStream(filter: filter, configuration: configuration, delegate: streamOutput)
                 
                 // Add a stream output to capture screen content
-                try stream?.addStreamOutput(streamOutput, type: .screen, sampleHandlerQueue: videoSampleBufferQueue)
+                try stream?.addStreamOutput(streamOutput!, type: .screen, sampleHandlerQueue: videoSampleBufferQueue)
                 stream?.startCapture()
             } catch {
                 continuation.finish(throwing: error)
